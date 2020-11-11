@@ -1,9 +1,8 @@
 #!/bin/bash -ue
 
 dump_file=$1
-
-skip_header=1
-row_size=3
+skip_header=${2:-0}
+row_size=${3:-2}
 
 cnt=0
 cnt_line=0
